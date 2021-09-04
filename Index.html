@@ -4,6 +4,33 @@
         <title> Hola Mundo! </title>
     </head> 
     <body>
+        <!-- ul es lista no ordenada -->
+        <!-- ol es lista ordenada -->
+
+        <ul>
+            <li> Elemento 1 </li>
+            <li> Elemento 2 </li>
+            <li> Elemento 3 </li>
+            <li> Elemento 4 </li>
+        </ul> 
+
+        <ol>
+            <li value="50"> Elemento 1 </li> <!-- value significa con cual numero empieza la lista-->
+            <li> Elemento 2 </li>
+            <li> Elemento 3 </li>
+            <li> Elemento 4 </li>
+            <li> <!-- para poner otra lista adentro de una lista-->
+                <ol> 
+                    <li style="list-style-type:lower-roman;"> elementito 1 </li> <!-- li te da otro tipo de lista-->
+                    <li style="list-style-type:lower-roman;"> elementito 2 </li>
+                    <li style="list-style-type:lower-roman;"> elementito 3 </li>
+                </ol> 
+            </li>
+        </ol> 
+
+
+
+
         <form action="/formulario" method="POST"> <!-- para poner un campo de texto -->
             <label for="nombre"> Nombre </label>
             <input value="parker" type="text" id="nombre" name="nombre" placeholder="Nombre"/>  
