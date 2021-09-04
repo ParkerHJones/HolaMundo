@@ -4,6 +4,18 @@
         <title> Hola Mundo! </title>
     </head> 
     <body>
+        <form action="/formulario" method="POST"> <!-- para poner un campo de texto -->
+            <label for="nombre"> Nombre </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>  
+            <br>
+            <label for="nombre"> Apellido </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+            <br>
+            <label for="comentario">Comentario</label>
+            <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+            <br>
+            <input type="submit" />
+        </form>
         <h1> Soy Yo Parker! </h1>
         <h2> Como? </h2>
         <h3> Como? </h3>
@@ -17,6 +29,7 @@
         <!--Este es solo un comentatrio. -->
         <a target="_blank" href="https://github.com/ParkerHJones"> Ir a mi perfil de github </a> 
         <br><br>
-        <img src="imagen/Pink shirt.png"/>
+        <img src="imagen/Pink shirt.png" height="200" width="200" />
+        
     </body>
 </html>
