@@ -1,93 +1,42 @@
 <!DOCTYPE html>
-<html> 
-    <head> <!-- etiquita--> 
-        <title> Hola Mundo! </title>
-        <link rel="stylesheet" href="styles.css">    
-    </head> 
-    <body>
-        <table style="width: 500px;"> <!--para poner la tabla con una frontera-->
-            <thead class="head">
-                <tr> 
-                    <th>Productos</th>
-                    <th>Precios</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Vegetables</td>
-                    <td> Un dolar </td>
-                </tr>
-                <tr>
-                    <td>Carne</td>
-                    <td> dos dolares </td>
-                </tr>
-                <tr>
-                    <td>Dos Raquetas</td>
-                    <td> $500 </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <td></td>
-                <td>Total: 503$</td>
-            </tfoot>
-        </table>
-
-
-        <!-- ul es lista no ordenada -->
-        <!-- ol es lista ordenada -->
-
-        <ul>
-            <li> Elemento 1 </li>
-            <li> Elemento 2 </li>
-            <li> Elemento 3 </li>
-            <li> Elemento 4 </li>
-        </ul> 
-
-        <ol>
-            <li value="50"> Elemento 1 </li> <!-- value significa con cual numero empieza la lista-->
-            <li> Elemento 2 </li>
-            <li> Elemento 3 </li>
-            <li> Elemento 4 </li>
-            <li> <!-- para poner otra lista adentro de una lista-->
-                <ol> 
-                    <li style="list-style-type:lower-roman;"> elementito 1 </li> <!-- li te da otro tipo de lista-->
-                    <li style="list-style-type:lower-roman;"> elementito 2 </li>
-                    <li style="list-style-type:lower-roman;"> elementito 3 </li>
-                </ol> 
-            </li>
-        </ol> 
-
-
-
-
-        <form action="/formulario" method="POST"> <!-- para poner un campo de texto -->
-            <label for="nombre"> Nombre </label>
-            <input value="parker" type="text" id="nombre" name="nombre" placeholder="Nombre"/>  
-            <br>
-            <label for="nombre"> Apellido </label>
-            <input value="jones" type="text" id="apellido" name="apellido" placeholder="Apellido"/> <!--value pone un valor inmediatamente-->
-            <br>
-            <label for="comentario">Comentario</label>
-            <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">este es un valor</textarea> <!--con textarea no es necesario a poner 'value ='-->
-            <br>
-            <button type="button"> Tipo boton </button> 
-            <button type="reset"> Tipo reset </button> <!--reset borra todo y empieza de nuevo-->
-            <button type="submit"> Tipo submit </button>
-        </form>
-        <h1> Soy Yo Parker! </h1>
-        <h2> Como? </h2>
-        <h3> Como? </h3>
-        <h4> Como? </h4> <!--Hay solo 6 h's no existe mas que 6-->
-        <p> Yo soy de Utah, tengo 26 anos, you enseno el tenis. </p>
-        <p> Mi dulce favorito es Don Saturs</p>
-        <hr>
-        <h1> Habilidades </h1>
-        <p> <span style="color:green"> SSIIIIIUUUUU </span>Hablo dos idiomas, certificado como profesional del Tenis, y puedo desorrolar :) <br><br> 99 </p>
-        <p> Abajo es mi link para mi perfil de GitHub </p>
-        <!--Este es solo un comentatrio. -->
-        <a target="_blank" href="https://github.com/ParkerHJones"> Ir a mi perfil de github </a> 
-        <br><br>
-        <img src="imagen/Pink shirt.png" height="200" width="200" />
-        
-    </body>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="titulo">
+        <h1 id="titulo">parksibebe</h1>
+    </header>
+    <section class="container"> <!-- section es igual que div-->
+        <article> <!-- posts o contenido independiente -->
+            <h2> Mis Metas </h2>
+            <p> Este es sobre mis metas :) </p>
+            <img src="imagen/Suit.jpeg" width="300" />
+            <p> Tengo muchas metas </p>
+        </article>
+        <article> <!-- posts o contenido independiente -->
+            <h2> Mi reggaetonero favorito </h2>
+            <p> Mi reggaetonero favorito </p>
+            <img src="imagen/badbunny.jpeg" width="300" />
+            <p> HOY SE BEBE HOY SE GASTA </p>
+        </article>
+        <article> <!-- posts o contenido independiente -->
+            <h2> Tiktok </h2>
+            <p> Mi tiktok, tengo mas que 330k seguidores  </p>
+            <img src="imagen/TikTok.jpeg" width="300" />
+            <p> @parksibebe en tiktok </p>
+        </article>
+    </section>
+    <footer>
+        <section>
+        <a href="#titulo"> Ir al comienzo</a>
+        <a href="mailto:parksibebe@gmail.com" >Contactame aqui :)</a>
+        </section>
+        <p> COPYRIGHT 2021</p>
+    </footer>
+</body>
 </html>
